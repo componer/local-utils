@@ -1,0 +1,30 @@
+{
+    "name": "local-utils",
+    "version": "0.0.1",
+    "description": "local utils",
+    "main": [
+        "src/script/local-utils.js",
+        "src/style/local-utils.scss"
+    ],
+    "moduleType": [
+        "es6"
+    ],
+    "authors": [
+        "tangshuang"
+    ],
+    "keywords": [
+        "componer"
+    ],
+    "dependencies": {},
+    "devDependencies": {},
+    "homepage": "https://github.com/tangshuang/local-utils",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/tangshuang/local-utils.git"
+    },
+    "ignore": [
+        "preview/",
+        "test/",
+        "componer.json"
+    ]
+}

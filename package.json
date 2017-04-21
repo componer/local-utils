@@ -1,0 +1,22 @@
+{
+  "name": "local-utils",
+  "version": "0.0.1",
+  "description": "local utils",
+  "main": "src/script/local-utils.js",
+  "scripts": {},
+  "keywords": [
+      "componer"
+  ],
+  "author": "tangshuang",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangshuang/local-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tangshuang/local-utils/issues"
+  },
+  "homepage": "https://github.com/tangshuang/local-utils#readme",
+  "license": "ISC"
+}

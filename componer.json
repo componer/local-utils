@@ -1,0 +1,73 @@
+{
+	"name": "local-utils",
+	"version": "0.0.1",
+	"type": "component",
+	"build": [
+		{
+			"from": "src/script/local-utils.js",
+			"to": "dist/js/local-utils.js",
+			"options": {
+				"minify": true,
+				"sourcemap": true,
+				"vendors": false
+			},
+			"settings": {}
+		},
+		{
+			"from": "src/style/local-utils.scss",
+			"to": "dist/css/local-utils.css",
+			"options": {
+				"minify": true,
+				"sourcemap": true,
+				"vendors": false
+			},
+			"settings": {
+                "sass": {},
+    			"postcss": {},
+    			"nextcss": {},
+    			"assets": {}
+            }
+		}
+	],
+	"preview": {
+		"dir": ".preview_tmp",
+		"script": {
+			"from": "preview/local-utils.js",
+			"options": {
+				"minify": false,
+				"sourcemap": true,
+                "vendors": true
+			},
+			"settings": {}
+		},
+		"style": {
+			"from": "preview/local-utils.scss",
+			"options": {
+				"minify": false,
+				"sourcemap": true,
+                "vendors": true
+			},
+			"settings": {}
+		},
+		"index": {
+			"from": "preview/index.html"
+		},
+		"watch": [
+			"preview/index.html",
+			"preview/local-utils.js",
+			"preview/local-utils.scss",
+			"src/**/*.js",
+			"src/**/*.scss"
+		],
+		"server": "preview/server.js"
+	},
+	"test": {
+		"entry": {
+			"from": "test/specs/local-utils.js",
+			"settings": {}
+		},
+		"reporters": "test/reporters",
+		"debug": false,
+		"browsers": ["PhantomJS"]
+	}
+}

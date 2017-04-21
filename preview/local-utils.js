@@ -1,0 +1,17 @@
+import * as Utils from '../src/script/local-utils'
+
+console.log(Utils.isTrue(false))
+console.log(Utils.isTrue(null))
+console.log(Utils.isTrue(undefined))
+console.log(Utils.isTrue(Infinity))
+console.log(Utils.isTrue(NaN))
+console.log(Utils.isTrue(''))
+console.log(Utils.isTrue([]))
+console.log(Utils.isTrue({}))
+console.log(Utils.isTrue(0))
+console.log(Utils.isNumeric(0))
+console.log(Utils.isNumeric('0'))
+console.log(Utils.isNumeric(Infinity))
+console.log(Utils.isNumeric('0', false))
+console.log(Utils.isNumeric(''))
+console.log(Utils.isNumeric(NaN))
